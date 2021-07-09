@@ -9,11 +9,15 @@
     margin: 0;
     padding: 0;
 }
+
+
 @font-face{
     font-family:Sansation_Regular;
     src:url(../font/sansation/Sansation_Regular.ttf);
     font-weight:400;
     font-display:swap}
+
+
 #root{
     font-family: sansation_regular;
 }
@@ -183,6 +187,10 @@
     width: 100%;
 }
 
+.react-tel-input .sg {
+    background-position: -112px -121px;
+}
+
 .react-tel-input .special-label{
     display: none;
     position: absolute;
@@ -248,16 +256,23 @@
     
 }
 
+.react-tel-input .flag{
+    width: 16px;
+    height: 11px;
+}
+
 .react-tel-input .selected-flag .flag {
     position: absolute;
     top: 50%;
     margin-top: -5px;
-    width: 16px;
-    height: 11px;
-    background-position: -112px -121px;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAA…cV/3vSvC/Bj1utPD6n/EnnaQbrf6BCX0AAAAASUVORK5CYII=");
+    background-size: cover;
 }
 
+.react-tel-input .country-list .flag {
+    margin-right: 7px;
+    margin-top: 2px;
+    display: inline-block;
+}
 
 .react-tel-input .selected-flag .arrow {
     position: relative;
@@ -270,6 +285,10 @@
     border-right: 3px solid transparent;
     border-top: 4px solid #555;
 }
+.react-tel-input .country-list .country.highlight {
+    background-color: #f1f1f1;
+}
+
 
 .cus_prop-type .select-cs{
     border: none;
@@ -428,13 +447,53 @@
     font-family: "Sansation_Bold";
 }
 
-@media screen and (max-width: 1920px){
+
+/*Dropdown flag*/
+.flag-dropdown__list{
+    width: 100%;
+    border: none;
+    appearance: none;
+    
+
+}
+
+.flag-dropdown__list:focus{
+    outline: none;
+}
+
+.react-tel-input .country-list {
+    max-height: 130px !important;
+    outline: none;
+    z-index: 1;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 10px 0 10px -1px;
+    box-shadow: 1px 2px 10px rgb(0 0 0 / 35%);
+    background-color: white;
+    width: 300px;
+    overflow-y: scroll;
+    border-radius: 0 0 3px 3px;
+}
+
+.react-tel-input .country-list .country {
+    padding: 7px 9px;
+
+}
+
+.react-tel-input .country-list .country:hover{
+    background-color: #f1f1f1;
+}
+
+
+
+@media (max-width: 1920px){
     .element-container{
         max-width: 80%;
     }
 }
 
-@media screen and (max-width: 766px) {
+@media (max-width: 766px) {
     .header__column-1-content {
       text-align: center;
     }

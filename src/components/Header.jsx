@@ -1,5 +1,5 @@
-
-
+import React, { useState } from 'react';
+import PhoneList from './country'
 
 function Header(){
     return(
@@ -52,26 +52,7 @@ function Header(){
                                         </div>
 
                                         <div className="form__body-row">
-                                            <div className="form-group form-group-cs-row">
-                                                
-                                                <div className="cus_phone react-tel-input">
-                                                    <label className="form-group__label">
-                                                    Phone number <span className="red_ark">*</span>
-                                                    </label>
-                                                    <div className="special-label">Phone</div>
-                                                    <input className="input_phone form-control input-cs" placeholder="1 (702) 123-4567" type="tel" name="phone" required="" value="+65"/>
-                                                    <div className=" flag-dropdown">
-                                                        <div className="selected-flag" title="Singapore: + 65" tabindex="0" role="button" aria-haspopup="listbox">
-                                                            <div className="flag sg">
-                                                                <div className="arrow">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                
-                                            </div>
+                                            <PhoneSelect phoneList = {PhoneList}/>
 
                                             <div class="cus_prop-type form-group-cs-row">
                                                     <label class="form-group__label">Property Type</label>
@@ -121,6 +102,73 @@ function Header(){
                 </div>
                 </div>
         </div>
+    )
+}
+
+function PhoneSelect(props){
+    const [flagImg, setFlagImg] = useState("https://flagpedia.net/data/flags/w80/us.png");
+    const [countryCodeValue, setCountryCodeValue] = useState("us");
+    const [phone, setPhone] = useState("1");
+    const [listOpen, setListOpen] = useState(false);
+    const [phoneInput, setPhoneInput] = useState("+1")
+
+    
+
+    function openSelectListHandler(){
+        setListOpen(!listOpen);
+    }
+
+    function handlePhoneChange(item){
+        setListOpen(false)
+        setCountryCodeValue(`${item.code.toLowerCase()}`)
+        setPhone(`${item["dial_code"].toLowerCase()}`)
+        setFlagImg(`https://flagpedia.net/data/flags/w40/${item.code.toLowerCase()}.png`);
+        setPhoneInput(item['dial_code'])
+    }
+    function handleInputChange(e){
+        setPhoneInput(e.target.value)
+    }
+//https://flagpedia.net/data/flags/w80/us.png
+    const urlImg = (code) => {
+        return `https://flagpedia.net/data/flags/w40/${code.toLowerCase()}.png`
+    }
+    return(
+            <div className="form-group form-group-cs-row">
+                        
+                <div className="cus_phone react-tel-input">
+                    <label className="form-group__label">
+                    Phone number <span className="red_ark">*</span>
+                    </label>
+                    <div className="special-label">Phone</div>
+                    <input className="input_phone form-control input-cs" placeholder="" type="tel" name="phone" required="" onChange={handleInputChange} value = {phoneInput}/>
+                    <div type="button" className="flag-dropdown"  >
+                        
+                        <div className="selected-flag" title="Singapore: + 65" tabindex="0" role="button" aria-haspopup="listbox">
+                            
+                            <div type="button" className="flag sg" onClick={openSelectListHandler} style={{backgroundImage: `url(${flagImg})`}}>
+                                <div className="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        {listOpen&&(
+                            <ul id="country-list" className="country-list" role="listbox" tabIndex="0">
+                               { props.phoneList.map((item, index) => {
+                                    return(
+                                        <li onClick={() => handlePhoneChange(item)} data-countryCode={item.code} className={item.code===countryCodeValue?"country hightlight":"country"} data-dialCode={item["dial_code"]} data-countryName={item.name} key={index}>
+                                            <div className="flag"  style={{backgroundImage: `url(${urlImg(item.code)})`}}></div>
+                                            <span className="country-name">{item.name}</span>
+                                            <span className="dial-code">{item["dial_code"]}</span>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        )}
+
+                    </div>
+                </div>
+
+                                                
+                                            </div>
     )
 }
 

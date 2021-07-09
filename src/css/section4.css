@@ -30,6 +30,7 @@
 
 .three-tricks__image{
     min-height: 240px;
+    max-width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -38,6 +39,10 @@
 
 .three-tricks__image img{
     width: 300px;
+}
+
+@media(max-width: 766px){
+   
 }
 
 .three-tricks__item .title{

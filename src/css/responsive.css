@@ -1,3 +1,103 @@
+
+
+
+
+@media (max-width: 766px) {
+    .columns-wrapper{
+        max-width: 60vw;
+        flex-direction: column;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .columns-wrapper .column{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    
+
+    .section2 .we_know_style{
+        font-size: 26px;
+    }
+
+    
+    .question-list{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+
+    .three-tricks__item{
+        padding: 10px 15px;
+    }
+
+    .question-list .question-list__left, .question-list .question-list__right{
+        width: 80%;
+
+    }
+    .three-tricks__item .title{
+        font-size: 20px;
+    }
+
+    .three-tricks__image img{
+        width: 200px;
+    }
+
+    .container_cs{
+        max-width: 80vw!important;
+    }
+}
+
+@media (max-width: 566px){
+    .three-tricks__image img{
+        width: 300px;
+    }
+    .three-title{
+        font-size: 2rem!important;
+    }
+
+    .container_cs{
+        max-width: 90vw!important;
+    }
+
+    .three-tricks{
+        flex-direction: column;
+    }
+
+    .three-tricks .three-tricks__item{
+        width: 100%!important;
+        min-height: 350px!important;
+        margin-bottom: 20px;
+        padding-bottom: 40px;
+        padding: 10px 40px;
+    }
+
+    
+
+    .question-list .question-list__left, .question-list .question-list__right{
+        width: 95%;
+
+    }
+
+    .columns-wrapper{
+        max-width: 90vw;
+        
+    }
+    .the_trust{font-size:22px}
+
+    .we_have{
+        font-size:14px;
+        width:100%;
+        margin-top:10px
+    }
+
+}
+
 @media(max-width:480px){
     /* .banner{height:auto;padding-bottom:30px}
     .discover{font-size:24px}
@@ -14,7 +114,7 @@
     .wrap_col{width:90%;margin-bottom:20px}
     .wrap_content_bg_gr{flex-direction:column-reverse}
     .wrap_content_right_gr{width:100vw}
-    .we_know{text-align:center;font-size:24px}
+    
     .can_be{font-size:20px;text-align:center;padding-left:0}
     .we_are_here{font-size:14px;text-align:center;width:100vw;margin-bottom:15px;padding-left:15px;padding-right:15px}
     .wrap_2_col_gr{flex-direction:column;padding-left:15px;padding-right:15px}
@@ -24,61 +124,8 @@
     
     #header{padding-left:10px;padding-right:10px} */
     
-    .the_trust{font-size:18px}
-
-    .we_have{
-        font-size:14px;
-        width:100%;
-        margin-top:10px
-    }
     
-}
 
-
-@media (max-width: 566px){
-    .columns-wrapper{
-        max-width: 100vw;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .columns-wrapper .column{
-        width: 100%;
-        margin-bottom: 20px
-    }
-    .three-title{
-        font-size: 2rem!important;
-    }
-
-    .three-tricks{
-        flex-direction: column;
-    }
-
-    .three-tricks .three-tricks__item{
-        width: 100%!important;
-        min-height: 350px!important;
-        margin-bottom: 20px;
-        padding-bottom: 40px;
-    }
-
-    .question-list{
-        flex-direction: column;
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-
-    .question-list .question-list__left, .question-list .question-list__right{
-        width: 100%;
-    }
-}
-
-@media (max-width: 766px) {
-    .section2 .we_know_style{
-        font-size: 26px;
-    }
-
-    .container_cs{
-        max-width: 100vw!important;
-    }
+    .we_know{text-align:center;font-size:24px}
+    
 }

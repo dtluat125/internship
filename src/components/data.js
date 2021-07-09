@@ -12,4 +12,7 @@ const imageList =[];
 url.map((img, index) => {
     imageList.push({url: img});
 })
-export default imageList
+
+
+
+export default imageList;
