@@ -1,0 +1,14 @@
+.sticky_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    z-index: 16;
+    background-color: #192a56;
+    border-radius: 50%;
+    bottom: 28px;
+    right: 20px;
+    cursor: pointer;
+}

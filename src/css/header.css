@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+@font-face{
+    font-family:Sansation_Bold;
+    src:url(../font/sansation/Sansation_Bold.ttf);
+    font-weight:700;
+    font-display:swap}
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family:Sansation_Regular;
+    src:url(../font/sansation/Sansation_Regular.ttf);
+    font-weight:400;
+    font-display:swap}
+#root{
+    font-family: sansation_regular;
+}
+
+.header{
+    
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+.header .green-bg{
+    background-color: #d2f2e9;
+}
+.element-container {
+    margin-left: auto;
+    margin-right: auto  ;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 15px;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#site-logo{
+    width: 80px;
+}
+
+.header__column-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header__column-1-content h1{
+    color: #0f4837;
+    font-family: "Sansation_Bold";
+    font-size: 50px;
+
+}
+
+.header__column-1-content p{
+    color: #0f4837;
+    font-family: "Sarala";
+    font-size: 26px;
+}
+
+.bold-number{
+    font-family: "Sansation_Bold";
+}
+
+.header__column-2{
+    padding: 4%;
+    padding-top: 5%;
+    background: url(https://campaign.deluxmortgage.sg/img/bg-vector-h1.png) no-repeat center center;
+    background-size: cover;
+    margin-bottom: -90px;
+}
+
+.header__column-2 .form{
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    overflow: hidden;
+    filter: drop-shadow(3px 7px 46px rgba(0, 0, 0, 0.15));
+    font-family: "Sansation_Regular";
+}
+
+.header__column-2 .form__header{
+    background-color: #53c9a5;
+    padding: 10px 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    font-family: "Sansation_Bold";
+}
+
+
+
+
+
+/* Form */
+.header__column-2 .form__body{
+    background: rgba(255, 255, 255, 0.94);
+    padding: 10px 35px 30px 35px;
+}
+
+.header__column-2 .form__body-header{
+    color: #252b29;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 16px;
+    width: 58%;
+}
+
+.head_light{
+    color: #4bb998;
+    font-family: Sansation_Bold;
+}
+
+.header__column-2 .form__body-row{
+    display: flex;
+    justify-content: space-between;
+}
+.form-group-new{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+.form-control-new{
+    border: none;
+    border-bottom: 1px solid #a1a7ae;
+    display: block;
+    width: 100%;
+    height: 43px;
+    font-size: 15px;
+    background: none;
+    color: #495057;
+}
+.form-group-new span{
+    font-size: 14px;
+    color: #a1a7ae;
+    position: absolute;
+    top: 11px;
+    transition: all 0.2s ease;
+    transform-origin: 0 0;
+    cursor: text;
+}
+
+.form-control-new:focus {
+    outline: none;
+}
+
+.form-control-new:focus, .form-control-new:valid {
+    border-bottom: 1px solid #a1a7ae;
+}
+
+.form-control-new:focus+span, .form-control-new:valid+span {
+    transform: translateY(-22px) scale(1);
+}
+
+.form-group-cs-row{
+    margin-bottom: 15px;
+    width: 48%;
+}
+
+
+
+.red_ark_cs {
+    color: red !important;
+    position: absolute !important;
+    top: 0 !important;
+}
+
+.react-tel-input{
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.react-tel-input .special-label{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    font-size: 13px;
+    left: 46px;
+    top: -8px;
+    background: #fff;
+    padding: 0 2px;
+    white-space: nowrap;
+}
+
+.react-tel-input .form-control{
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .01rem;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 48px;
+    margin-left: 0;
+    line-height: 25px;
+    outline: none;
+}
+.react-tel-input .input_phone:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+.input_phone {
+    border: none !important;
+    border-bottom: 1px solid #a1a7ae !important;
+    border-radius: 0% !important;
+    background: none !important;
+    width: 100%!important;
+    height: 40px!important;
+}
+.input-cs{
+    height: 38px;
+}
+
+
+
+.red_ark {
+    color: red;
+  }
+
+.react-tel-input .flag-dropdown {
+    background-color: unset !important;
+    border: none;
+    border-radius: 0% !important;
+    position: absolute;
+    height: 38px;
+    bottom: 0!important;
+    padding: 0;
+}
+
+.react-tel-input .selected-flag {
+    outline: none;
+    position: relative;
+    width: 38px;
+    height: 100%;
+    padding: 0 0 0 8px;
+    border-radius: 3px 0 0 3px;
+    
+}
+
+.react-tel-input .selected-flag .flag {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    width: 16px;
+    height: 11px;
+    background-position: -112px -121px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAA…cV/3vSvC/Bj1utPD6n/EnnaQbrf6BCX0AAAAASUVORK5CYII=");
+}
+
+
+.react-tel-input .selected-flag .arrow {
+    position: relative;
+    top: 50%;
+    margin-top: -2px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid #555;
+}
+
+.cus_prop-type .select-cs{
+    border: none;
+    border-bottom: 1px solid #a1a7ae !important;
+    border-radius: 0%;
+    background: none !important;
+}
+
+.cus_prop-type select:focus{
+    outline: none!important;
+    box-shadow: none;
+}
+
+.form-group__label{
+    font-size: 14px;
+    color: #a1a7ae;
+}
+.loan-input-field .form-control-new{
+    border-bottom: none;
+    padding: 6px 0 7px;
+
+}
+.loan-input-field{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid #a1a7ae;
+    transition: all 0.1s ease-out;
+
+}
+
+
+
+    .loan-input-field__currency-wrapper::before{
+    content: "";
+    border-bottom: 1px solid transparent;
+    width: 50%;
+    position: absolute;
+    bottom: -1px;
+    transition: all 0.1s ease-out;
+}
+.loan-input-field__currency-wrapper::after{
+    content: "";
+    border-bottom: 1px solid transparent;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    transition: all 0.1s ease-out;
+}
+
+
+.loan-input-field__currency-wrapper{
+    height: 0.01em;
+    display: flex;
+    max-height: 2em;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.form-group .loan-input-field__currency{
+    color: rgba(0, 0, 0, 0.54);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    white-space: nowrap;
+    margin: 0;
+}
+.loan-input-field:hover {
+    border-bottom: 2px solid black;
+}
+.loan-input-field:focus-within {
+    border-bottom: 2px solid transparent;
+}
+
+.loan-input-field:focus-within .loan-input-field__currency-wrapper::before,.loan-input-field:focus-within .loan-input-field__currency-wrapper::after{
+    border-bottom: 2px solid rgb(10, 10, 167);
+}
+
+.form__body-check{
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+}
+
+.form__body-check .form-check__input{
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -1.25rem;
+}
+
+.form-check__label{
+    color: #565656;
+}
+
+.form__body-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn_cs {
+    background: #fb964e;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 38%;
+    padding: 10px 0;
+    font-weight: bold!important;
+    font-size: 15px!important;
+  }
+
+.btn_cs:hover {
+    color: #ffffff;
+}
+
+.btn_animate {
+    border: none!important;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fb964e!important;
+    color: #fff!important;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transform:  translateZ(0);
+    position: relative;
+    transition-duration: 0.3s;
+}
+
+.btn_animate:before {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #53c9a5;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.btn_animate:hover:before {
+    transform: scaleX(1);
+  }
+
+.header__column-2 .header__footer{
+    font-size: 14px;
+    margin-top: 15px;
+    color: #293038c9;
+    font-family: "Sansation_Bold";
+}
+
+@media screen and (max-width: 1920px){
+    .element-container{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .header__column-1-content {
+      text-align: center;
+    }
+    .header__logo {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .header .header__column-1-content {
+      margin-top: 25px;
+    }
+    .header .header__column-1 h1 {
+      font-size: 24px;
+    }
+    .header .header__column-1 p {
+      font-size: 14px;
+    }
+    
+    /* form */
+    .form__header {
+      padding: 10px 8px;
+      font-size: 18px;
+    }
+
+    .form__body-header {
+      text-align: center;
+      width: 100%;
+      font-size: 11px;
+    }
+    .form__body-row {
+      flex-direction: column;
+    }
+    .form-group-new {
+      width: 100%!important;
+    }
+    .form-group-cs-row{
+        width: 100%;
+    }
+    .btn_cs {
+      width: 80%;
+    }
+    .form-group__label{
+        font-size: 12px;
+        color: #a1a7ae;
+    }
+    .loan-input-field{
+        width: 100%;
+    }
+
+    .header__footer{
+        font-size: 11px!important;
+    }
+    /* end form */
+  }
+  @media (max-width: 480px){
+  .form-check__label {
+      font-size: 11px;
+      display: inline-block;
+  }}

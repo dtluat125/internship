@@ -1,0 +1,134 @@
+/* @import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css"; */
+
+.section1{
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.columns-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section1 .column{
+    background: #f5faff;
+    box-shadow: 2px 11px 29px rgb(0 0 0 / 7%);
+    border-radius: 5px;
+    width: 28%;
+    padding: 20px 35px;
+    padding-bottom: 50px;
+    font-family: sansation_regular;
+}
+
+.column__header{
+    display: flex;
+    justify-content: space-between;
+    font-family: sansation_regular;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    border: 1px solid #bcbcbc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.column__body__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.new_pu{
+    color: #4bb998;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.buc {
+    color: #404040;
+    font-size: 22px;
+}
+
+.sibor{
+    font-size: 18px;
+    color: #8f9392;
+    min-width: 20%;
+}
+
+.num_percent{
+    font-size: 22px;
+    color: #4bb998;
+    min-width: 20%;
+}
+
+.slick-slider
+{
+    
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 90px;
+}
+
+.slick-list
+{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track
+{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 6075px;
+    opacity: 1;
+    
+    transition: -webkit-transform 65000ms ease 0s;
+    animation-name: bouncing;
+    animation-duration: 80000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translate3d(-972px, 0px, 0px); 
+    }
+    50%{
+        transform: translate3d(0px, 0px, 0px);
+    }
+    100%{
+        transform: translate3d(-972px, 0px, 0px);
+    }
+
+}
+
+.slick-track--active{
+    transform: translate3d(0,0,0);
+}
+
+.slick-track__slick{
+    width: 243px;
+
+}

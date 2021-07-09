@@ -1,0 +1,35 @@
+.section3{
+    background: #4bb998;
+    padding: 50px 0;
+    font-family: "Sansation_Regular";
+}
+
+.the_trust {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    color: #ffffff;
+    font-family: "Sansation_Bold";
+}
+
+.we_have {
+    font-size: 24px;
+    width: 30%;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.get_rate {
+    background: #fb964e;
+    border-radius: 5px;
+    padding: 15px 50px;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 42px;
+    cursor: pointer;
+    color: #ffffff;
+}

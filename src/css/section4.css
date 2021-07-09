@@ -1,0 +1,51 @@
+.section4{
+    background-color: #f5f7f8;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    font-family: "Sansation_Regular";
+}
+
+.section4 .element-container{
+    max-width: 73%;
+}
+
+.section4 .three-title{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.three-tricks{
+    display: flex;
+    justify-content: space-around;
+}
+
+.three-tricks__item{
+    padding: 10px 36px;
+    margin-right: 10px;
+    margin-left: 10px;  
+    width: 30%;
+    min-height: 512px;
+}
+
+.three-tricks__image{
+    min-height: 240px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-tricks__image img{
+    width: 300px;
+}
+
+.three-tricks__item .title{
+    font-weight: 400;
+    font-size: 22px;
+    min-height: 66px;
+}
+
+.three-tricks__item .description{
+    font-weight: 300;
+}
