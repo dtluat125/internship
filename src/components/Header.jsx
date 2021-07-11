@@ -107,7 +107,7 @@ function Header(){
 
 function PhoneSelect(props){
     const [flagImg, setFlagImg] = useState("https://flagpedia.net/data/flags/w80/us.png");
-    const [countryCodeValue, setCountryCodeValue] = useState("us");
+    const [countryCodeValue, setCountryCodeValue] = useState("US");
     const [phone, setPhone] = useState("1");
     const [listOpen, setListOpen] = useState(false);
     const [phoneInput, setPhoneInput] = useState("+1")
@@ -120,7 +120,7 @@ function PhoneSelect(props){
 
     function handlePhoneChange(item){
         setListOpen(false)
-        setCountryCodeValue(`${item.code.toLowerCase()}`)
+        setCountryCodeValue(`${item.code}`)
         setPhone(`${item["dial_code"].toLowerCase()}`)
         setFlagImg(`https://flagpedia.net/data/flags/w40/${item.code.toLowerCase()}.png`);
         setPhoneInput(item['dial_code'])
@@ -154,7 +154,7 @@ function PhoneSelect(props){
                             <ul id="country-list" className="country-list" role="listbox" tabIndex="0">
                                { props.phoneList.map((item, index) => {
                                     return(
-                                        <li onClick={() => handlePhoneChange(item)} data-countryCode={item.code} className={item.code===countryCodeValue?"country hightlight":"country"} data-dialCode={item["dial_code"]} data-countryName={item.name} key={index}>
+                                        <li onClick={() => handlePhoneChange(item)} data-countryCode={item.code} className={(item.code===countryCodeValue)?"country highlight":"country"} data-dialCode={item["dial_code"]} data-countryName={item.name} key={index}>
                                             <div className="flag"  style={{backgroundImage: `url(${urlImg(item.code)})`}}></div>
                                             <span className="country-name">{item.name}</span>
                                             <span className="dial-code">{item["dial_code"]}</span>

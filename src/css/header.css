@@ -259,13 +259,14 @@
 .react-tel-input .flag{
     width: 16px;
     height: 11px;
+    background-size: contain;
 }
 
 .react-tel-input .selected-flag .flag {
     position: absolute;
     top: 50%;
     margin-top: -5px;
-    background-size: cover;
+    background-size: contain;
 }
 
 .react-tel-input .country-list .flag {
@@ -286,7 +287,7 @@
     border-top: 4px solid #555;
 }
 .react-tel-input .country-list .country.highlight {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1!important;
 }
 
 
